@@ -104,8 +104,9 @@ export function Gallery() {
               initial={{ scale: 0.94 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.94 }}
-              src={gallery[lightbox].src}
-              alt={gallery[lightbox].alt}
+              src={gallery[lightbox]?.src}
+              alt={gallery[lightbox]?.alt ?? ""}
+
               className="max-h-[88vh] max-w-full rounded-2xl object-contain"
             />
           </motion.div>
